@@ -9,7 +9,7 @@ const fibonacci = function(n) {
     }else if (n === 1 || n === 2) {
         return 1;
     }else {
-        for(let i = 1;i <= n-1; i++) {
+        for(let i = 1 ;i < n-1; i++) {
             tmp= array[i]+ array[i-1];
             array.push(tmp);
         }

@@ -6,20 +6,22 @@ const subtract = function(n1,n2) {
 	return n1-n2;
 };
 
-const sum = function(numbers) {
-	let sum=0;
+const sum = function(numbers=[]) {
+	/*let sum=0;
   numbers.forEach(element => {
     sum+=element;
   });
-  return sum;
+  return sum;*/
+  return numbers.reduce((total,current) => total + current,0);
 };
 
-const multiply = function(numbers) {
-  let mul=1;
+const multiply = function(numbers=[]) {
+  /*let mul=1;
   numbers.forEach(element => {
     mul*=element;
   });
-  return mul;
+  return mul;*/
+  return numbers.reduce((total, current) => total*current ,1);
 };
 
 const power = function(n1,n2) {

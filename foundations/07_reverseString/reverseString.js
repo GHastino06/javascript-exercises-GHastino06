@@ -1,4 +1,4 @@
-const reverseString = function(word) {
+const reverseString = function(word="") {
     let b = "";
     let str = String(word);
     let bruh = str.length;

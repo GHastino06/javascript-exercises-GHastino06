@@ -1,17 +1,15 @@
-const palindromes = function (str) {
-    let temp = "";
+const palindromes = function (str="") {
     let check = true;
     let punctuation =['?','!',',','.'];
-    temp = str;
     //cleaning the string
     punctuation.forEach(element => {
-        temp = temp.replaceAll(element,"");
+        str = str.replaceAll(element,"");
     });
-    temp = temp.toLowerCase();
-    temp = temp.replaceAll(" ","");
+    str = str.toLowerCase();
+    str = str.replaceAll(" ","");
     //
-    for(let i=0, j=temp.length-1; i < j; i++,j--) {
-        if (temp.charAt(i)!= temp.charAt(j)){
+    for(let i=0, j=str.length-1; i < j; i++,j--) {
+        if (str.charAt(i)!= str.charAt(j)){
             check = false;
             break;
         }
